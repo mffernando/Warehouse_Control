@@ -142,7 +142,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GraphicController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OperationController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,6 +189,25 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Registration\ProductGroup.cshtml" />
+    <Content Include="Views\Registration\ProductBrand.cshtml" />
+    <Content Include="Views\Registration\Warehouse.cshtml" />
+    <Content Include="Views\Registration\MeasureUnit.cshtml" />
+    <Content Include="Views\Registration\Product.cshtml" />
+    <Content Include="Views\Registration\Country.cshtml" />
+    <Content Include="Views\Registration\State.cshtml" />
+    <Content Include="Views\Registration\City.cshtml" />
+    <Content Include="Views\Registration\Provider.cshtml" />
+    <Content Include="Views\Registration\UserProfile.cshtml" />
+    <Content Include="Views\Registration\User.cshtml" />
+    <Content Include="Views\Operation\ProductInput.cshtml" />
+    <Content Include="Views\Operation\ProductOutput.cshtml" />
+    <Content Include="Views\Operation\ProductLoss.cshtml" />
+    <Content Include="Views\Operation\Inventory.cshtml" />
+    <Content Include="Views\Graphic\MonthLoss.cshtml" />
+    <Content Include="Views\Graphic\CheckInCheckOut.cshtml" />
+    <Content Include="Views\Report\CurrentWarehouse.cshtml" />
+    <Content Include="Views\Report\Resupply.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
