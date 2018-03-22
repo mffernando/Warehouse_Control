@@ -9,11 +9,13 @@ namespace Warehouse.Controllers
     public class GraphicController : Controller
     {
         // GET: Graphic
+        [Authorize]
         public ActionResult MonthLoss()
         {
             return View();
         }
         // GET: Graphic
+        [Authorize]
         public ActionResult CheckInCheckOut()
         {
             return View();

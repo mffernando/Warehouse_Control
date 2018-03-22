@@ -9,11 +9,13 @@ namespace Warehouse.Controllers
     public class ReportController : Controller
     {
         // GET: Report
+        [Authorize]
         public ActionResult CurrentWarehouse()
         {
             return View();
         }
         // GET: Report
+        [Authorize]
         public ActionResult Resupply()
         {
             return View();

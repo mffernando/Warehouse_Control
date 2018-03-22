@@ -1,0 +1,42 @@
+﻿@model Warehouse.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="container">
+    <div class="row">
+        <h3 class="title">Authentication</h3>
+    </div>
+    <div class="row">
+        <section id="LoginForm">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+        <div class="form-group">
+            @Html.LabelFor(u => u.User, new { @class = "form-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(u => u.User, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(p => p.Password, new { @class = "form-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(p => p.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                 @Html.CheckBoxFor(r => r.RemindMe)
+                 @Html.LabelFor(r => r.RemindMe)
+        </div>
+        </div>
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                <input type="submit" class="btn btn-success" value="Login" />
+        </div>
+        </div>
+    }
+</section>
+    </div>
+</div>
+
